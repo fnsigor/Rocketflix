@@ -40,9 +40,9 @@ function setMovieSecondaryInfo(object, getFormatedReleaseDate, removeLastCaracte
 async function setMoviePoster(path){
     try {
          const response = await axios.get(`https://image.tmdb.org/t/p/w500/${path}`)
-         document.getElementById('movie-img').style.backgroundImage = `url(https://image.tmdb.org/t/p/w500/${response.request.responseURL})`
+         document.getElementById('movie-poster').style.backgroundImage = `url(https://image.tmdb.org/t/p/w500/${response.request.responseURL})`
     } catch (error) {
-        document.getElementById('movie-img').style.backgroundImage = `url(assets/interrogacao.jpg)`
+        document.getElementById('movie-poster').style.backgroundImage = `url(assets/interrogacao.jpg)`
     }
     
 }
