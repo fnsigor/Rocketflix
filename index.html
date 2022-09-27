@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <title>Rocketflix</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/icon.svg" alt="">
+        <h1>Don't know what to watch?</h1>
+    </header>
+
+    <main>
+        <div class="movie-container">
+            <div id="movie-figure">
+                <div src="" alt="" id="movie-img"></div>
+                <h4 id="movie-title"></h4>
+            </div>
+            <div id="movie-details">
+                <p id="movie-description">Ops, today is not the day to watch a movie. Let´s code! 🚀</p>
+                <ul>
+                    <li id="original-title"></li>
+                    <li id="release-date"></li>
+                    <li id="li-genres"></li>
+                    <li id="production-countries"></li>
+                </ul>
+            </div>
+        </div>
+    
+        <button>
+            <img src="assets/icon.svg" alt="">
+            <span>Find movie</span>
+        </button>
+    </main>
+
+    <footer>
+        <p>Click "Find Movie" and we'll bring you information of some movie for you to watch today.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

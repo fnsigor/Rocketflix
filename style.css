@@ -1,0 +1,217 @@
+/*============GENERAL================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+
+    --text-color: #FFFCF9;
+    --button-bg-color: #E9E6E3;
+    --button-text-color: #1A1A1A;
+}
+
+body{
+    background: linear-gradient(37.19deg, #1E46A3 3.83%, #000000 50.5%, #C12A23 85.86%) no-repeat;
+    text-align: center;
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+/*============HEADER================*/
+
+header{
+    margin-bottom: 3rem;
+}
+
+header img{
+    height: 6.293rem;
+    margin-top: 2rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+
+
+
+
+/*============MAIN================*/
+main{
+    margin-bottom: 3rem;
+}
+
+.movie-container{
+    width: 31.6rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+#movie-figure div{
+    background-image: url(assets/defaultImage.jpg);
+    background-position: center;          
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+
+    width: 17.1rem;
+    height: 24.377rem;
+    margin-bottom: 1.985rem;
+    margin-inline: auto;
+}
+
+h4{           
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1.929rem;
+}
+
+.movie-container p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+ul{
+    display: none;
+}
+
+button{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+    margin-bottom: 2.6rem;
+    padding: 1.1rem 1.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.7rem;
+
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+
+    border: .2rem solid var(--button-text-color);
+    border-radius: .5rem;
+
+    margin-left: 50vw;
+    transform: translateX(-50%);
+}
+
+button img{
+    height: 2.529rem;
+}
+
+
+
+
+/*============FOOTER================*/
+footer{
+    margin-bottom: 5rem;
+}
+
+footer p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 37.5rem;
+}
+
+
+
+
+
+/*===========================RESPONSIVE=========================*/
+@media (min-width: 1200px) {
+    
+    .movie-container{
+        display: flex;
+        width: initial;
+        justify-content: center;
+        position: relative;
+    }
+
+    .movie-container h4{
+        margin-bottom: 0;
+    }
+
+    ul{
+        display: block;
+    
+        text-align: center;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .span-title{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .api-span{
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-left: .2rem;
+    }
+    
+
+    #movie-details{
+        text-align: left;
+        width: 70vw;
+    }
+
+    .movie-container p{
+        width: 70%;
+        text-align: center;
+        margin-inline: auto;
+        margin-bottom: 5rem;
+
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+
+    #movie-figure{
+        position: absolute;
+        left: 2%;
+        width: 27.1rem;
+    }
+
+    #movie-figure div{
+        width: 100%;
+        height:34.377rem;
+    }
+
+    h4{
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    
+
+
+}
