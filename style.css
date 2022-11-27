@@ -1,6 +1,6 @@
 /*============GENERAL================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-:root{
+:root {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 
@@ -17,7 +17,7 @@
     --button-text-color: #1A1A1A;
 }
 
-body{
+body {
     background: linear-gradient(37.19deg, #1E46A3 3.83%, #000000 50.5%, #C12A23 85.86%) no-repeat;
     text-align: center;
     color: var(--text-color);
@@ -26,23 +26,48 @@ body{
     padding-block: 2rem 1rem;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
 
+#loadingIcon {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #F7F7F7;
+    border-radius: 50%;
+    border-top-color: transparent;
+    margin: 25vh auto;
+
+    animation: rotate .8s infinite linear;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hide{
+    display: none;
+}
 
 /*============HEADER================*/
 
-header{
+header {
     margin-bottom: 3rem;
 }
 
-header img{
+header img {
     height: 6.293rem;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 4rem;
     line-height: 6rem;
@@ -54,18 +79,18 @@ h1{
 
 
 /*============MAIN================*/
-main{
+main {
     margin-bottom: 3rem;
 }
 
-.movie-container{
+.movie-container {
     margin: 0 auto;
     margin-bottom: 3rem;
 }
 
-#movie-poster{
+#movie-poster {
     background-image: url(assets/defaultImage.jpg);
-    background-position: center;          
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
@@ -76,25 +101,25 @@ main{
     margin-inline: auto;
 }
 
-h4{           
+h4 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 3rem;
     margin-bottom: 1.929rem;
 }
 
-.movie-container p{
+.movie-container p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding-inline: 1.5rem;
 }
 
-ul{
+ul {
     display: none;
 }
 
-button{
+button {
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -117,7 +142,7 @@ button{
     transform: translateX(-50%);
 }
 
-button img{
+button img {
     height: 2.529rem;
 }
 
@@ -126,11 +151,11 @@ button img{
 
 /*============FOOTER================*/
 
-footer p{
+footer p {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    
+
     margin: 0 auto;
     max-width: 90vw;
     width: 37.5rem;
@@ -143,44 +168,44 @@ footer p{
 /*===========================RESPONSIVE=========================*/
 @media (min-width: 1200px) {
 
-    body{
+    body {
         position: relative;
         padding-bottom: 5rem;
     }
-    
-    .movie-container{
+
+    .movie-container {
         display: flex;
         width: initial;
         justify-content: center;
     }
 
-    ul{
+    ul {
         display: block;
-    
+
         text-align: center;
 
         margin-left: 50%;
         transform: translateX(-50%);
     }
 
-    .span-title{
+    .span-title {
         font-weight: 500;
         font-size: 2rem;
     }
 
-    .api-span{
+    .api-span {
         font-weight: 400;
         font-size: 1.8rem;
         margin-left: .2rem;
     }
-    
 
-    #movie-main-info{
+
+    #movie-main-info {
         text-align: left;
         width: 70vw;
     }
 
-    .movie-container p{
+    .movie-container p {
         width: 70%;
         text-align: center;
         margin-inline: auto;
@@ -191,9 +216,9 @@ footer p{
         line-height: 2.4rem;
     }
 
-    
 
-    #figure-space{
+
+    #figure-space {
         position: absolute;
         top: 0;
         left: 2%;
@@ -201,17 +226,17 @@ footer p{
         width: fit-content;
         max-width: 27.1rem;
         height: 100%;
-        
+
         display: flex;
         align-items: center;
     }
 
-    #movie-poster{
+    #movie-poster {
         width: 27.1rem;
         height: 40rem;
     }
 
-    h4{
+    h4 {
         font-weight: 700;
         font-size: 2.4rem;
         line-height: 3rem;
@@ -219,7 +244,7 @@ footer p{
 
         margin-bottom: 0;
     }
-    
+
 
 
 }
